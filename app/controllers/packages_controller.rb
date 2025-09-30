@@ -57,6 +57,6 @@ class PackagesController < ApplicationController
 
     the_package.destroy
 
-    redirect_to("/packages", { :notice => "Package deleted successfully." })
+    redirect_to("/", { :notice => "Package deleted successfully." })
   end
 end

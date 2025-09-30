@@ -9,7 +9,21 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
+  <nav>
+    <a href="/">Delivery Tracker</a>
+    |
+    <a href="/users/edit">Edit profile</a>
+    |
+    <a href="/users/sign_out">Sign out</a>
+  </nav>
+  <hr>
+  <div class="text-success">
+    <%= notice %>
+  </div>
 
+  <div class="text-danger">
+    <%= alert %>
+  </div>
   <body>
     <%= yield %>
   </body>
